@@ -1,1 +1,5 @@
-.exe
+# Ignore all .exe files
+*.exe
+
+# Ignore the .vscode folder (Visual Studio Code settings)
+.vscode/
