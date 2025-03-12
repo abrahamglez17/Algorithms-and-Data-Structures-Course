@@ -12,6 +12,7 @@ def findDisappearedNumbers(nums):
 
 # Time complexity: O(n)
 # Space complexity: O(n)
+# NOTES:
 # n1: +1 because range does not include the last element
 print(findDisappearedNumbers(case1))
 print(findDisappearedNumbers(case2))
