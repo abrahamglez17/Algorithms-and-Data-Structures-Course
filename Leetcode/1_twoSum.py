@@ -25,7 +25,7 @@ print(s.twoSum(case3, target3))
 
 class Solution2:
     def twoSum(self, nums, target):
-        solDict = {}
+        solDict = {} # value: index
         for i in range(len(nums)):
             complement = target - nums[i] # n1
             if complement in solDict:
