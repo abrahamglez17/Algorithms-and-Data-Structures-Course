@@ -24,10 +24,10 @@ class Solution:
                     left +=1
                     right -=1
                 
-                elif(currSum<target):
-                    left +=1 #need a different sum
-                else:
-                    right -=1
+                elif(currSum<target): #if sum is less than target
+                    left +=1 #need to increase the sum
+                else: #if sum is greater than target
+                    right -=1 #need to decrease the sum
         return results
 
 
