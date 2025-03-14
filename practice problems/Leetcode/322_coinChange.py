@@ -3,11 +3,11 @@ class Solution:
         dp = [float('inf')] * (amount + 1)
         dp[0]=0 #base case
         for i in range(1, amount+1):
-            for j in coins:
-                if i-j>=0:
-                    dp[i] = min(dp[i], dp[i-j]+1)
+            for j in coins: #for each coin
+                if i-j>=0: #if the amount is greater than the coin
+                    dp[i] = min(dp[i], dp[i-j]+1) #update the minimum number of coins needed
         
-        return dp[amount] if dp[amount]!= float('inf') else -1
+        return dp[amount] if dp[amount]!= float('inf') else -1 #return the minimum number of coins needed
     
 # Time complexity: O(n*m) where n is the amount and m is the number of coins
 # Space complexity: O(n) where n is the amount
