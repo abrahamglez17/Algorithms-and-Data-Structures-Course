@@ -15,7 +15,6 @@ import sys
 #  2. LONG_INTEGER n
 #
 
-
 def repeatedString(s, n):
     total = (n//len(s))*s.count('a') + s[:n%len(s)].count('a')
     return total
